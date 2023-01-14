@@ -1,4 +1,4 @@
-package com.example.kubernetesexample.model;
+package mm.tg.kubernetesexample.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

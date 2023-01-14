@@ -1,6 +1,6 @@
-package com.example.kubernetesexample.repo;
+package mm.tg.kubernetesexample.repo;
 
-import com.example.kubernetesexample.model.StartupLog;
+import mm.tg.kubernetesexample.model.StartupLog;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

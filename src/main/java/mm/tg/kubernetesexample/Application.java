@@ -1,4 +1,4 @@
-package com.example.kubernetesexample;
+package mm.tg.kubernetesexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

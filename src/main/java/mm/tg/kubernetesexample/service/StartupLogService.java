@@ -1,8 +1,8 @@
-package com.example.kubernetesexample.service;
+package mm.tg.kubernetesexample.service;
 
-import com.example.kubernetesexample.model.StartupLog;
-import com.example.kubernetesexample.model.StartupLog.LogData;
-import com.example.kubernetesexample.repo.StartupLogRepo;
+import mm.tg.kubernetesexample.model.StartupLog;
+import mm.tg.kubernetesexample.model.StartupLog.LogData;
+import mm.tg.kubernetesexample.repo.StartupLogRepo;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -11,6 +11,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.time.OffsetDateTime;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -53,5 +54,9 @@ public class StartupLogService {
                         (map, entry) -> map.put(entry.getKey().toString(), entry.getValue().toString()),
                         HashMap::putAll
                 );
+    }
+
+    public List<StartupLog> findAll() {
+        return startupLogRepo.findAll();
     }
 }
