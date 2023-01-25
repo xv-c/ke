@@ -31,7 +31,9 @@ public class StartupLog {
     @Builder
     public static class LogData implements Serializable {
         private Map<String, String> data;
+
         private Map<String, String> env;
+
         private Map<String, String> properties;
     }
 }

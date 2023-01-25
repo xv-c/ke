@@ -52,7 +52,10 @@ public class StartupLogService {
                 .collect(
                         HashMap::new,
                         (map, entry) -> map.put(entry.getKey().toString(), entry.getValue().toString()),
-                        HashMap::putAll
+                        (m1, m2) -> {
+                            System.out.println(1);
+                            m1.putAll(m2);
+                        }
                 );
     }
 
