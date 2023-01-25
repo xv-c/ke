@@ -1,10 +1,10 @@
 package mm.tg.kubernetesexample.service;
 
+import jakarta.annotation.PostConstruct;
+import lombok.RequiredArgsConstructor;
 import mm.tg.kubernetesexample.model.StartupLog;
 import mm.tg.kubernetesexample.model.StartupLog.LogData;
 import mm.tg.kubernetesexample.repo.StartupLogRepo;
-import jakarta.annotation.PostConstruct;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.net.InetAddress;

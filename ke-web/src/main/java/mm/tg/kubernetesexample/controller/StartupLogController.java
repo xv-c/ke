@@ -1,7 +1,7 @@
 package mm.tg.kubernetesexample.controller;
 
-import mm.tg.kubernetesexample.model.StartupLog;
 import lombok.RequiredArgsConstructor;
+import mm.tg.kubernetesexample.model.StartupLog;
 import mm.tg.kubernetesexample.service.StartupLogService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
